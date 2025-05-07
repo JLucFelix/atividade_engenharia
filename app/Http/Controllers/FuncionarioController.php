@@ -48,7 +48,6 @@ public function update(Request $request, $id)
         'departamento_id' => 'required|exists:departamentos,id',
     ]);
 
-    // Atualiza os campos
     $funcionario->update([
         'nome' => $request->nome,
         'email' => $request->email,
